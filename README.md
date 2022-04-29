@@ -12,9 +12,7 @@ This solves the problem when only **mono** output is recognized for Nari.
 
 If you use PipeWire, use the ``install-pipewire.sh`` script.
 
-Or, you can make the changes yourself manuallY:
-
-If you use PipeWire and you see the default profiles (names like *Multichannel*)
+If you see the default profiles (names like *Multichannel*)
 but not these profiles (names like *Game Output*, *Chat Output*), then
 you might need to change the udev rules.
 
