@@ -10,16 +10,14 @@ This solves the problem when only **mono** output is recognized for Nari.
 
 ### PipeWire
 
-If you use PipeWire and you see the default profiles (names like *Multichannel*)
-but not these profiles (names like *Game Output*, *Chat Output*), then
-you might need to change the udev rules.
+If you use PipeWire, use the install-pipewire.sh script by ``cd`` into the ``razer-nari-pulseaudio-profile`` folder and run ``sudo chmod +x install-pipewire.sh && ./install-pipewire.sh``. You may need to reboot before you see the changes take effect.
 
-In `91-pulseaudio-razer-nari.rules` change `PULSE_PROFILE_SET` to `ACP_PROFILE_SET`.
+PipeWire has a few differences from pulseaudio:
 
-#### Fedora34
+In `91-pulseaudio-razer-nari.rules` is changed `PULSE_PROFILE_SET` to `ACP_PROFILE_SET`.
+The profiles are copied into `/usr/share/alsa-card-profile/mixer/` instead of `/usr/share/pulseaudio/alsa-mixer/`.
 
-Might apply to other distributions that have migrated to PipeWire.
-In addition to the change to `91-pulseaudio-razer-nari.rules` described above, you also need to move all config files originated from this repo from `/usr/share/pulseaudio/alsa-mixer/` to `/usr/share/alsa-card-profile/mixer/`.
+These two changes are necessary on Pop OS 22.04 and Fedora34, and may apply to other distros that have moved to PipeWire as well.
 
 ### Arch Linux
 
