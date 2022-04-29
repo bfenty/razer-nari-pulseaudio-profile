@@ -10,6 +10,10 @@ This solves the problem when only **mono** output is recognized for Nari.
 
 ### PipeWire
 
+If you use PipeWire, I've created an install script. Use the install-pipewire.sh script by ``cd`` into the ``razer-nari-pulseaudio-profile`` folder and run ``sudo chmod +x install-pipewire.sh && ./install-pipewire.sh``
+
+Or, you can make the changes yourself manuallY:
+
 If you use PipeWire and you see the default profiles (names like *Multichannel*)
 but not these profiles (names like *Game Output*, *Chat Output*), then
 you might need to change the udev rules.
