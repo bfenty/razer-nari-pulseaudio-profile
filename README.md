@@ -10,7 +10,7 @@ This solves the problem when only **mono** output is recognized for Nari.
 
 ### PipeWire
 
-If you use PipeWire, use the install-pipewire.sh script by ``cd`` into the ``razer-nari-pulseaudio-profile`` folder and run ``sudo chmod +x install-pipewire.sh && ./install-pipewire.sh``. You may need to reboot before you see the changes take effect.
+If you use PipeWire, use the ``install-pipewire.sh``. You may need to reboot before you see the changes take effect.
 
 PipeWire has a few differences from pulseaudio:
 
